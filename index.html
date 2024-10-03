@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本旅遊七天六夜</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hotel-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hotel-section h2 {
+            font-size: 24px;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+
+        .hotel-section h1 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .hotel-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .hotel-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+
     <script>
         window.onscroll = function() {
             scrollFunction();
@@ -175,8 +217,10 @@
         <a href="#four">第四天</a>
         <a href="#five">第五天</a>  
         <a href="#six">第六天</a>
-        <a href="#culture">景點介紹</a>
-        <a href="#hotel">飯店介紹</a>
+        <a href="#Attractions">景點介紹</a>
+        <a href="#hotel">住宿介紹</a>
+        <a href="#restaurant">吃的介紹</a>
+
     </nav>
     <section id="about">
         <h2>關於這次日本旅行</h2>
@@ -241,7 +285,7 @@
         <div class="event">奈良公園</div>
         
         <div class="time">20:00</div>
-        <div class="event">Hostel & Gallery G Is Good</div>
+        <div class="event">Hostel & Gallery G Is Good     <a href="#zero-hotel">第零天 奈良住宿</a></div>
     </div>
 </section>
 
@@ -250,7 +294,7 @@
     <p>第二天就是逛街行程，可以買藥妝那些的</p>
     <div class="schedule">
         <div class="time">09:00</div>
-        <div class="event">抵達大阪橋樑酒店心齋橋(放置行李)</div>
+        <div class="event">抵達大阪橋樑酒店心齋橋(放置行李) <a href="#first-hotel">第一天 大阪住宿</a></div>
         
         <div class="time">10:00~14:00</div>
         <div class="event">搭乘道頓堀水上觀光船，心齋橋筋商店街中餐自理</div>
@@ -283,7 +327,7 @@
         <div class="event">搭乘京阪本線前往京都</div>
         
         <div class="time">14:30</div>
-        <div class="event">Check-in 天然溫泉 蓮花之湯 御宿野乃京都七條</div>
+        <div class="event">Check-in 天然溫泉 蓮花之湯 御宿野乃京都七條 <a href="#second-hotel">第二天 京都住宿</a></div>
         
         <div class="time">15:30~</div>
         <div class="event">清水寺體驗日本文化風情</div>
@@ -316,7 +360,7 @@
         <div class="event">抹茶行程(伊藤久右衛門、中村藤吉)</div>
         
         <div class="time">23:00~</div>
-        <div class="event">夜晚巴士前往東京</div>
+        <div class="event">夜晚巴士前往東京 <a href="#third-hotel">第三天 京都住宿</a></div>
     </div>
 </section>
 
@@ -343,7 +387,10 @@
         <div class="event">自由活動，Lawson Fujikawaguchiko Town Hall（20 分鐘）: 旅拍勝地🌟，富士山與羅森便利店，時尚與自然的完美融合！</div>
         
         <div class="time">15:20</div>
-        <div class="event">我們會在羅森便利店脫隊，在市區採購好食物後前往我們包棟民宿，大約十分鐘車程</div>
+        <div class="event">我們會在羅森便利店脫隊，在市區採購好食物後前往我們包棟民宿，大約二十分鐘車程</div>
+        
+        <div class="time">~17:00</div>
+        <div class="event">抵達河口湖民宿--夢見る河口湖 コテージ戸沢センター <a href="#fourth-hotel">第四天 富士山住宿</a></div>
     </div>
 </section>
 
@@ -364,7 +411,7 @@
         <div class="event">秋葉原找東西吃</div>
         
         <div class="time">19:00</div>
-        <div class="event">回 OMO3 淺草飯店</div>
+        <div class="event">回 OMO3 淺草飯店 <a href="#fifth-hotel">第五天 淺草住宿</a></div>
         
         <div class="time">20:00</div>
         <div class="event">東京晴空塔 東京晴空街道</div>
@@ -392,94 +439,103 @@
     </div>
 </section>
 
-    <section id="food">
+    <section id="Attractions">
         <h2>景點介紹</h2>
-        <p>?????????????</p>
-        <ul>
-            <li>??</li>
-        </ul>
+    </section>
+
+    <section class="hotel-section" id="nara vacation">
+        <h2>奈良</h2>
+        <img src="https://tw.wamazing.com/media/wp-content/uploads/sites/4/2024/03/narapark_pixta_36693798_M-853x569.jpg.webp" >
+        <h1>奈良公園</h1>
+        <p>佔地約660公頃的「奈良公園」，包含了位於奈良市街中心部分的「春日大社」、「興福寺」、「東大寺」等被指定為世界文化遺產的知名景點，更有一整片原始林的「若草山」、「春日山」山區等自然景觀，與自古以來就棲息於此的小鹿們形成了一個獨特的歷史自然公園。來到奈良公園，遊客可以體驗到悠久的歷史文化、廣大的自然景觀，以及可以與被指定為日本國家自然紀念物的小鹿們嬉戲，奈良公園也因此成為了奈良縣代表性的觀光景點。 </p>
+        <img src="https://wp-odai.wamazing.com/media/wp-content/uploads/sites/2/2024/03/narapark_pixta_76987906_M.jpg.webp">
+        <p>春日大社</p>
+        <p>世界文化遺產之一的「春日大社」是日本全國約3,000座春日神社的總本社，相傳奈良公園裡的鹿群便是春日大社神明的使者，在神社境內不但能與小鹿互動拍照，不同時期造訪更是有不同的看點。
+            例如每年2月與8月會舉辦「萬燈籠」活動，在夜晚18:00至20:30之間將二之鳥居到本殿之間約3,000盞的燈籠點燃，黑暗中顯現的朱紅色的社殿，使得神社內充滿神祕氛圍。 
+            若是在4月、5月到春日大社觀光，就絕對不能錯過春日大社境內的紫藤賞花勝地「萬葉植物園」，園內約有200株的紫藤花，每年都吸引了大批賞花客前往一睹這浪漫的景色。
+        <img src="https://wp-odai.wamazing.com/media/wp-content/uploads/sites/2/2024/03/narapark_pixta_31684533_M.jpg.webp">
+        <p>東大寺</p>
+        <p>以奈良大佛聞名的寺院「東大寺」，不但被列為世界文化遺產之一，境內的「大佛殿」更是世界最大規模的木造建築之一。而在大佛殿內的「盧舍那佛像」以及矗立在南大門的「金剛力士像」都是東大寺境內絕對不能錯過的必看看點。
+           由於東大寺境內各建築，包括大佛殿、法華堂等，都需要再額外買票才能入內參觀，因此可以依個人喜好安排造訪唷！</p>
+        <img src="https://wp-odai.wamazing.com/media/wp-content/uploads/sites/2/2024/03/narapark_pixta_66186756_M.jpg.webp">
+        <p>興福寺</p>
+        <P>距離近鐵奈良站步行僅需約5分鐘路程的「興福寺」，與東大寺同樣屬於世界文化遺產，境內的「五重塔」是奈良具代表性的地標之一（※），另外也推薦到「國寶館」走走，館內展示著日本國寶佛像「阿修羅像」，對佛教美術有興趣的遊客可千萬不能錯過！在安排行程時，推薦可以從距離較近的興福寺依序參訪東大寺、春日大社，慢慢往距離較遠的若草山方向移動，再搭乘公車返回車站。
+
+            如果想要深入了解當地的歷史文化特色，也推薦可以透過日本體驗活動線上預約網「完美行體驗」預約活動行程「古都奈良半日遊」，由導遊帶領，一次探訪奈良公園、東大寺、春日大社、興福寺、奈良町等景點，透過詳盡的介紹來深入了解各景點的特色。
+            
+            ※興福寺五重塔自2023年7月起進入預計為期8年的整修改建工程，期間內不開放參觀。(我都做完了才發現，不想刪了)</P>
+
+        <img src="https://prd-static.gltjp.com/glt/data/directory/12000/11692/20210725_151229_2ff38d98_w1920.webp" alt="奈良市東向商店街">
+        <p>奈良市東向商店街</p>
+        <p>奈良市東向商店街位於近鐵奈良站東口外，是一條南北走向的拱廊式商店街，從大宮通一直延伸到三條通。街道東側有興福寺，西側建有民房，所有房屋全部朝東，故取名「東向町」。</p>
+        <p>商店街直通「興福寺」、「猿澤池」和「奈良町」等奈良市知名觀光景點，東大寺所在的奈良公園也在步行範圍內，因此建議可在奈良觀光的往返途中順道去逛街。</p>
+        <p>擁有非常久遠的歷史的東向商店街，在1915年連接奈良和大阪的近鐵大阪線開通後，伴隨奈良站的落成而開始急速地發展。現在道路的東西兩側則建立起了許多店鋪，像是餐廳、藥妝店、美容院、服飾店等，約80家的店鋪鱗比櫛次。和菓子店以及手拭巾專賣店等具有歷史的店家也相當多。</p>
+        <p>另外，提供茶泡飯、大和牛、在地酒等等奈良名產的餐廳也很多。蔬菜鹽漬後再用酒粕醃漬過的漬物「奈良漬」；醋飯放上鮭魚或鯛魚等切片再用柿葉捲起來做成押箱壽司的「柿葉壽司」；長崎蛋糕風味的麵糊搭配上紅豆餡的「三笠燒」等等，是品嚐奈良在地美食的好去處。</p>
+
+
+            <img src="https://wp-odai.wamazing.com/media/wp-content/uploads/sites/2/2024/03/narapark_pixta_37288054_M.jpg.webp" alt="奈良公園">
+            <p>奈良公園的交通方式＆優惠票券介紹</p>
+            <p>欲前往奈良公園，可搭電車到鄰近的JR「奈良站」或近畿日本鐵道（簡稱近鐵）的「近鐵奈良站」。其中JR「奈良站」距離奈良公園較遠，徒步約需20分鐘左右，若是計劃深度遊覽平城宮跡、春日大社等世界遺產的話，建議可以選擇搭乘公車前往。</p>
+            
+            <p>奈良縣推出的巴士優惠票券「奈良公園・西之京地區世界遺產1日券」（奈良公園・西ノ京 世界遺産 1 Day Pass），能以500日圓的價格，在1日內無限次搭乘指定範圍內的公車，來趟奈良世界遺產巡禮，且於部分設施出示1日券甚至還有另外的優惠活動唷！確切的優惠內容與巴士班次時間，請參考官網。</p>
+            
+            <p>而從關西各地區前往奈良縣時，若是選擇搭乘JR，推薦可以利用JR西日本的超值交通票券「關西地區鐵路周遊券」，自由選擇1天～4天的使用效期，並在期限內憑券暢遊京都、大阪、神戶、奈良各地區。若是在日本交通票券訂票平台「完美行車票」網站上事前購買，抵達當地後只需要在西日本各車站的指定自動販賣機掃描護照及QR Code即可取票，非常方便唷！</p>
+            
+        
     </section>
 
     <section id="culture">
         <h2>文化介紹</h2>
         <p>??????????</p>
     </section>
-
-
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        .hotel-section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .hotel-section h2 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .hotel-section img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-
-        .hotel-section p {
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-    </style>
     
     <section  id="hotel">
         <h2>住宿介紹</h2>
+
     </section>
 
-    <section class="hotel-section" id="hotel">
+    <section class="hotel-section" id="zero-hotel"> 
         <h2>第零天 奈良住宿</h2>
         <img src="https://pix8.agoda.net/hotelImages/161928/-1/88ff3cb6217ebd014b4d27a271901fdf.jpg?ca=7&ce=1&s=1024x" alt="洛哈斯JR奈良站天然溫泉超級酒店">
         <p>洛哈斯JR奈良站天然溫泉超級酒店</p>
         <p>酒店與JR奈良站相通，只需步行1分鐘就到達，而且AEON超市就在JR車站1樓，購買日常用品超方便。酒店設有天然溫泉，讓大家在市中心也能享受浸泡時光。房間有枕頭選單，住客可按個人需要，揀選不同高度、硬度、材質的枕頭。</p>
+    </section>
     
+    <section class="hotel-section" id="first-hotel"> 
         <h2>第一天 大阪住宿</h2>
         <img src="https://bridge-group.net/img/hotel/img-bridge.jpg" alt="心齋橋橋樑酒店">
         <p>心齋橋 橋樑酒店</p>
         <p>橋樑酒店位於從心齋橋站，四橋站徒步3分鐘的絕好位置。每天22點至23點有免費的拉麵，啤酒，燒酒，雞尾酒，紅酒，日本酒，威士忌等50多種酒精飲料。</p>
+    </section>
     
+    <section class="hotel-section" id="second-hotel"> 
         <h2>第二天 京都住宿</h2>
         <img src="https://s.yimg.com/ny/api/res/1.2/4VK9OwDe.GBnQvopeSMcdg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://s.yimg.com/os/creatr-uploaded-images/2023-09/8b06b060-50b8-11ee-b7bb-ad0d17031e3a" alt="京都御宿野乃溫泉飯店">
         <p>京都 御宿 野乃溫泉飯店</p>
         <p>店大廳沒有太多複雜的設計，但有個很棒又貼心的地方－免費供應的mini bar，提供喝到飽的咖啡跟抹茶牛奶，還有孩子最愛的果汁，讓嗨寶喝到笑得合不攏嘴。除了有這些無限供應的飲品外，泡完溫泉後，休息室也無料提供冰棒（每人限拿一支）；還有夜間限定，每晚21:30～23:00，免費提供飯店特製的醬油拉麵，真的是不怕你吃，只怕你吃不完。</p>
-
+    </section>
+    
+    <section class="hotel-section" id="third-hotel"> 
         <h2>第三天 京都住宿</h2>
         <img src="https://resources.matcha-jp.com/resize/720x2000/2017/10/03-37639.webp" alt="京都到東京的夜間巴士">
         <p>京都到東京的夜間巴士</p>
         <p>傳說中只有沒錢和身體硬朗的大學生才敢做的省錢交通工具，身為符合這兩點的我們必須試試。</p>
-        
+    </section>
+    
+    <section class="hotel-section" id="fourth-hotel"> 
         <h2>第四天 富士山住宿</h2>
         <img src="https://img1.cdn-eztravel.com.tw/images/0222k12000ak2gqenE8B5_C_790_444_R5_Q70.jpg" alt="Cottage Tozawa Center">
         <p>Cottage Tozawa Center</p>
         <p>館內設有煮食用具及大雪櫃，雙層單位很有特色，有郊區親近鄉下的感覺，十分寫意舒適，難免會有昆蟲入屋，介意者要留意。 每一戶都對正富士山，可以享受開窗見到逆富士的美景。</p>
-        
+    </section>
+    
+    <section class="hotel-section" id="fifth-hotel"> 
         <h2>第五天 淺草住宿</h2>
         <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/513512988.jpg?k=cdbc42ee49e6bf45501673c06a2a65a9007df979ee16442000984f0c1c9a5151&o=&hp=1" alt="OMO3 Asakusa by Hoshino Resorts">
         <p>OMO3 Asakusa by Hoshino Resorts</p>
         <p>OMO3 Asakusa by Hoshino Resorts 地理位置很棒，位於東京，有空調客房、共用休息室、WiFi（免費）和露台。這間飯店位置很不錯，位在台東區，距離 Komagatado 600 公尺，距離 Edo Taito Traditional Crafts Center 600 公尺。這間住宿全面禁菸，距離 Hozomon Gate 200 公尺，客房均提供平面電視和保險箱。這間住宿的每間客房都有寢具和毛巾。</p>
-
-        
-
     </section>
+    
     
         
 
